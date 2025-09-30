@@ -1,4 +1,8 @@
+package tn.esprit.gestionzoo.main;
 import java.util.Scanner;
+
+import tn.esprit.gestionzoo.entities.*;
+
 
 public class ZooManagement {
    public static void main(String[] args) {
@@ -6,6 +10,7 @@ public class ZooManagement {
 
         System.out.print("name: ");
         String zooName = scanner.nextLine();
+        //check empty or no
         while (zooName.isEmpty()) {
             System.out.print("not empty");
             zooName = scanner.nextLine();

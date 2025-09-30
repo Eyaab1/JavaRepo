@@ -1,8 +1,9 @@
+package tn.esprit.gestionzoo.entities;
 public class Zoo {
 
-    String name;
-    String city;
-    Animal[] animals;
+    public String name;
+    public String city;
+    public Animal[] animals;
     int nbrCag = 0;
 
     static final int nbrCages = 25;
@@ -21,6 +22,10 @@ public class Zoo {
         }
         if (searchAnimal(animal) != -1) {
             System.out.println(" already exist");
+            return false;
+        }
+        if (animal.age <0) {
+            System.out.println("age cannot be negative");
             return false;
         }
         animals[nbrCag] = animal;
