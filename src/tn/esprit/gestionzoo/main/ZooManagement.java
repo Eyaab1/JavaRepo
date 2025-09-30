@@ -39,7 +39,7 @@ public class ZooManagement {
 
         Zoo myZoo = new Zoo(zooName, city, nbrCages);
         Animal lion = new Animal("Felidae", "Lion", 5, true);
-        myZoo.animals[0] = lion; 
+        myZoo.getAnimals()[0] = lion; 
 
         myZoo.displayZoo();
         lion.displayAnimal();
