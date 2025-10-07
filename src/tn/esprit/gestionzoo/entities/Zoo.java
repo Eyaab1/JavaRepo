@@ -85,7 +85,13 @@ public class Zoo {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if(name.isEmpty()) {
+            System.out.println("Not empty");
+        }else{
+            this.name = name;
+        }
+        
+        
     }
 
     public String getCity() {
