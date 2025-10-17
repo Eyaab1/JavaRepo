@@ -20,12 +20,12 @@ public class Dolphin extends aquatic {
     }
 
     @Override
-    public void swim() {
-        System.out.println("this dolphin is swimming");
+        public void swim() {
+        System.out.println("the speed of swimming is" + swimmingSpeed );
     }
 
     @Override
     public String toString() {
-        return super.toString() + ", Swimming Speed: " + swimmingSpeed + " km/ h";
+        return super.toString() + ", swimming Speed: " + swimmingSpeed + " km/ h";
     }
 }
