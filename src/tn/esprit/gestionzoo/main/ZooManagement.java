@@ -49,5 +49,19 @@ public class ZooManagement {
         System.out.println(lion);
 
         scanner.close();
+        aquatic aquatic = new aquatic("ocean", "fish", "9erch", 5, false);
+        Dolphin dolphin = new Dolphin(50.0f, "bhar", "delho", "dolphinou", 8, true);
+        Penguin penguin = new Penguin(200.0f, "pen", "penguin", "penguigouna", 3, false);
+
+        System.out.println(aquatic);
+        System.out.println(dolphin);
+        System.out.println(penguin);
+
+        System.out.println("\ntesting swimming");
+        aquatic.swim();
+        dolphin.swim();
+        penguin.swim();
     }
 }
+
+
